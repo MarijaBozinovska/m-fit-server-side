@@ -3,7 +3,6 @@
 namespace App\Filament\Widgets;
 
 use App\Models\Shipment;
-use Closure;
 use Filament\Tables;
 use Filament\Widgets\TableWidget as BaseWidget;
 use Illuminate\Database\Eloquent\Builder;
@@ -26,9 +25,9 @@ class LatestShipments extends BaseWidget
     {
         return [
             Tables\Columns\TextColumn::make('id')
-                ->label('Shipment ID'), // Change the label to 'Shipment ID'
+                ->label('Shipment ID'),
             Tables\Columns\TextColumn::make('order.id')
-                ->label('Order Number'), // Assuming 'order' is the relationship to the order
+                ->label('Order Number'),
             Tables\Columns\TextColumn::make('country')
                 ->label('Country'),
         ];

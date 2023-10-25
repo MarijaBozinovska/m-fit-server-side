@@ -3,7 +3,6 @@
 namespace App\Filament\Widgets;
 
 use App\Models\Payment;
-use Closure;
 use Filament\Tables;
 use Filament\Widgets\TableWidget as BaseWidget;
 use Illuminate\Database\Eloquent\Builder;
@@ -30,7 +29,7 @@ class LatestPayments extends BaseWidget
             Tables\Columns\TextColumn::make('order.id')
                 ->label('Order number'),
             Tables\Columns\TextColumn::make('amount')
-                ->label('Amount'), // Assuming 'amount' is the payment amount
+                ->label('Amount'),
         ];
     }
 }
