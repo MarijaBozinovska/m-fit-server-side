@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('address', 100);
             $table->string('city', 100);
-            $table->string('country', 20);
-            $table->string('zip_code', 10);
+            $table->string('country', 100);
+            $table->string('zip_code', 100);
             $table->foreignId('order_id')->constrained();
             $table->timestamps();
         });
