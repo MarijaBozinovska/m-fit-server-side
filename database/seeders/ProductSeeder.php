@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Product;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
@@ -21,8 +20,8 @@ class ProductSeeder extends Seeder
                     'title' => fake()->title,
                     'description' => fake()->text,
                     'image' => fake()->image,
-                    'price' => fake()->numberBetween(10,100),
-                    'stock' => fake()->numberBetween(10,100),
+                    'price' => fake()->numberBetween(10, 100),
+                    'stock' => fake()->numberBetween(10, 100),
                 ]);
         }
     }

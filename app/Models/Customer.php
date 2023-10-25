@@ -27,6 +27,6 @@ class Customer extends Model
 
     public function fullName(): Attribute
     {
-        return Attribute::get(fn() => $this->attributes['first_name'] . ' ' . $this->attributes['last_name']);
+        return Attribute::get(fn () => $this->attributes['first_name'].' '.$this->attributes['last_name']);
     }
 }

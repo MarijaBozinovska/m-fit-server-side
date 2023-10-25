@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Payment;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class PaymentSeeder extends Seeder
@@ -18,8 +17,8 @@ class PaymentSeeder extends Seeder
         for ($i = 0; $i < 50; $i++) {
             Payment::query()
                 ->create([
-                    'amount' => fake()->numberBetween(10,100),
-                    'order_id' => fake()->numberBetween(1,5),
+                    'amount' => fake()->numberBetween(10, 100),
+                    'order_id' => fake()->numberBetween(1, 5),
                 ]);
         }
     }

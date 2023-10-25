@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Shipment;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ShipmentSeeder extends Seeder
@@ -22,7 +21,7 @@ class ShipmentSeeder extends Seeder
                     'city' => fake()->city,
                     'country' => fake()->country,
                     'zip_code' => fake()->postcode,
-                    'order_id' => fake()->numberBetween(1,5),
+                    'order_id' => fake()->numberBetween(1, 5),
                 ]);
         }
     }
