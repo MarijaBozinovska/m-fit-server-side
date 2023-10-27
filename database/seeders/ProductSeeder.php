@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
         for ($i = 0; $i < 50; $i++) {
             Product::query()
                 ->create([
-                    'title' => fake()->title,
+                    'title' => fake()->name,
                     'description' => fake()->text,
                     'image' => fake()->image,
                     'price' => fake()->numberBetween(10, 100),

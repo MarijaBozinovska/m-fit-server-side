@@ -20,7 +20,6 @@ class CustomerSeeder extends Seeder
                     'first_name' => fake()->firstName,
                     'last_name' => fake()->lastName,
                     'email' => fake()->email,
-                    'password' => fake()->password,
                     'address' => fake()->address,
                     'phone_number' => fake()->phoneNumber,
                 ]);
